@@ -1,6 +1,6 @@
 FROM huggingface/transformers-pytorch-gpu:latest
 ENV HOME=/home/user
-RUN chmod 777 /home/user
+RUN mkdir -p /home/user && chmod 777 /home/user
 # Disable pip cache: https://stackoverflow.com/questions/45594707/what-is-pips-no-cache-dir-good-for
 ENV PIP_NO_CACHE_DIR=1
 RUN apt update && apt install -y wget
