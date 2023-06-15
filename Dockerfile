@@ -8,5 +8,6 @@ RUN wget https://together-distro-packages.s3.us-west-2.amazonaws.com/archlinux/x
 chmod +x /usr/local/bin/together-node
 COPY app app
 COPY requirements.txt requirements.txt
+COPY local-cfg.yaml /home/user/cfg.yaml
 RUN pip install -r ./requirements.txt
 WORKDIR /app
