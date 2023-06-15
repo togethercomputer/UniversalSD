@@ -1,0 +1,7 @@
+# Installed to /home/user/cfg.yaml in container
+worker:
+  mode: local-service
+  group:
+    alloc: each
+  command: /usr/bin/python3 /app/serving.py
+  env: HF_HOME=/home/user
