@@ -1,5 +1,5 @@
 diffusers==0.12.1
-torch==1.13.1
+torch==2.2.0
 xformers==0.0.16
 accelerate==0.16.0
 triton==2.0.0a1
